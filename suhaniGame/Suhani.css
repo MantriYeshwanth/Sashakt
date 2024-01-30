@@ -1,0 +1,74 @@
+/* body {
+   background-image: url(splashintrow.jpeg.jpg) ;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f4f4f4;
+} */
+
+.word-scramble {
+  background-color:pink;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+.word-scramble h2 {
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+.word-scramble p {
+  margin-bottom: 15px;
+}
+
+ .word-scramble form {
+  margin-top: 20px;
+}
+
+.word-scramble label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.word-scramble input {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.word-scramble button {
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.word-scramble button:hover {
+  background-color: #0056b3;
+}
+
+p.message {
+  font-weight: bold;
+  margin-top: 20px;
+  color: #28a745;
+}
+
+/* Optional: Add media queries for responsiveness */
+@media (max-width: 768px) {
+  .word-scramble {
+    width: 90%;
+  }
+}

@@ -1,0 +1,244 @@
+.Board {
+    text-align: center;
+    position: relative; /* Set the position to relative on the .Board element */
+    min-height: 100vh; /* Set a minimum height to fill the viewport */
+  }
+  
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%; /* Adjust the width as needed */
+    margin: auto; /* Center the container */
+  }
+  
+  .line-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .board-container {
+    display: flex;
+    justify-content: center;
+    background-color: DodgerBlue;
+    padding: 10px;
+    height: 120px;
+    margin-left: 18%;
+  }
+  
+  .board-container > div {
+    flex: 0 0 auto; /* Don't allow flex items to grow or shrink */
+    background-color: #f1f1f1;
+    width: 75px; /* Adjust the width of each box as needed */
+    height: 75px; /* Adjust the height of each box as needed */
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 20px; /* Adjust the font size as needed */
+  }
+  
+  .image-container {
+    margin-right: 20%; /* Push the image to the right */
+  }
+  
+  .image-container img {
+    width: 200px; /* Adjust the width of the image as needed */
+    height: 180px; /* Maintain the aspect ratio */
+    margin-top: -35px;
+  }
+  
+  .selected-node {
+    border-radius: 50px;
+    width: 33px;
+    height: 33px;
+    padding-top: 50px;
+    margin: 10px auto;
+    background-color: gray;
+  } 
+  
+  .selected-image {
+    border-radius: 50%;
+    width: 50px; /* Adjust the width of the image as needed */
+    height: 50px; /* Adjust the height of the image as needed */
+    margin: 10px auto;
+  }
+  
+  .popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    text-align: center;
+  }
+  
+  .popup button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .all{
+    margin-bottom: 70px;
+  }
+  
+  .btn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  }
+  
+  .btn:disabled {
+    cursor: not-allowed;
+  }
+  
+  
+  .primary {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  .danger {
+    color: #fff;
+    background-color: #dc3545;
+    border-color: #dc3545;
+  }
+  
+  .panel > div > button {
+    margin: 20px;
+  }
+  
+  div.mover {
+    width: 20px;
+    height: 20px;
+    background: #777;
+    position :relative;
+    -webkit-animation: gamemove 3s ease-in-out infinite; 
+    animation: gamemove 3s ease-in-out infinite;
+    z-index: 2;
+  }
+  
+  .mover-container {
+    background-color: #eee;
+    width: 220px;  
+    margin: 20px;
+  }
+  
+  .zone {
+    background-color: #ddd;
+    width: 220px; /* Set an initial width */
+    margin: 20px;
+    color: #fff;
+    transition: width 0.5s ease; /* Add a transition for smooth animation */
+  }
+  
+  .zone.expanded {
+    width: 150px; /* Set the expanded width as desired */
+  }
+  
+  
+  .instructions {
+    margin-top: 1%;
+    text-align: left;
+    padding: 40px;
+    color: chocolate;
+  }
+  
+  @-webkit-keyframes gamemove {
+    0%   {top: 0px; left: 0px;}
+    5%   {top: 0px; left: 20px;}
+    10%  {top: 0px; left: 40px;}
+    15%  {top: 0px; left: 60px;}
+    20%  {top: 0px; left: 80px;}
+    25%  {top: 0px; left: 100px;}
+    30%  {top: 0px; left: 120px;}
+    35%  {top: 0px; left: 140px;}
+    40%  {top: 0px; left: 160px;}
+    45%  {top: 0px; left: 180px;}
+    50%  {top: 0px; left: 200px;}
+    55%  {top: 0px; left: 180px;}
+    60%  {top: 0px; left: 160px;}
+    65%  {top: 0px; left: 140px;}
+    70%  {top: 0px; left: 120px;}
+    75%  {top: 0px; left: 100px;}
+    80%  {top: 0px; left: 80px;}
+    85%  {top: 0px; left: 60px;}
+    90%  {top: 0px; left: 40px;}
+    95%  {top: 0px; left: 20px;}
+    100% {top: 0px; left: 0px;}
+  
+  }
+  
+  @keyframes gamemove{
+    0%   {top: 0px; left: 0px;}
+    5%   {top: 0px; left: 20px;}
+    10%  {top: 0px; left: 40px;}
+    15%  {top: 0px; left: 60px;}
+    20%  {top: 0px; left: 80px;}
+    25%  {top: 0px; left: 100px;}
+    30%  {top: 0px; left: 120px;}
+    35%  {top: 0px; left: 140px;}
+    40%  {top: 0px; left: 160px;}
+    45%  {top: 0px; left: 180px;}
+    50%  {top: 0px; left: 200px;}
+    55%  {top: 0px; left: 180px;}
+    60%  {top: 0px; left: 160px;}
+    65%  {top: 0px; left: 140px;}
+    70%  {top: 0px; left: 120px;}
+    75%  {top: 0px; left: 100px;}
+    80%  {top: 0px; left: 80px;}
+    85%  {top: 0px; left: 60px;}
+    90%  {top: 0px; left: 40px;}
+    95%  {top: 0px; left: 20px;}
+    100% {top: 0px; left: 0px;}
+  }
+  
+  /* 
+  
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 10%; /* Adjust the top margin as needed //
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    margin: auto;
+  }
+  
+  .line-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 60px; /* Adjust the margin as needed //
+  }
+  
+  .panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  */

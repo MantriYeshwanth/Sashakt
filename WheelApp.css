@@ -1,0 +1,19 @@
+/* WheelApp.css */
+/* body{
+  overflow: hidden;
+  margin: 0;
+} */
+.wheeel {
+  position: relative;
+  height: 100vh;
+  
+}
+
+.wheel-container {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+

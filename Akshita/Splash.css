@@ -1,0 +1,50 @@
+/* .splash {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 5vh; 
+}
+
+.splash-content {
+    text-align: center;        
+    margin-bottom: 630px; 
+    padding: 20px;
+    background: rgba(155, 178, 228, 0.5);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border:2px solid rgb(185, 184, 184);
+    opacity:0.8;
+}
+.para{
+    color: white;
+    transition: color 0.4s;
+    
+}
+
+.para:hover {
+    color: #eaff03;
+}
+
+.head{
+    color: white;
+    transition: color 0.4s;
+}
+
+.head:hover {
+    color: #3eff03;
+}
+
+.enter-button {
+    display: inline-block;
+    padding: 10px 20px;
+    outline: 2px solid #000000;
+    color: #fff;
+    background: rgb(138, 138, 240);
+    font-family: cursive;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.enter-button:hover {
+    background: rgb(117, 117, 240);
+} */

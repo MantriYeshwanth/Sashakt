@@ -1,0 +1,20 @@
+/* Breadcrumbs.css */
+
+.breadcrumbs {
+    margin: 10px;
+    font-size: 16px;
+  }
+  
+  .breadcrumbs span {
+    margin-right: 5px;
+  }
+  
+  .breadcrumbs a {
+    color: #3498db;
+    text-decoration: none;
+  }
+  
+  .breadcrumbs a:hover {
+    text-decoration: underline;
+  }
+  

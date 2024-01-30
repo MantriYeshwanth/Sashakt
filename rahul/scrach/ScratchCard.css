@@ -1,0 +1,44 @@
+/* ScratchCard.css */
+
+.scratch-card-box {
+    position: relative;
+    width: 640px; /* Adjust the width as needed */
+    height: 480px; /* Adjust the height as needed */
+    margin: 20px;
+    overflow: hidden;
+  }
+  
+  .scratch-card-box canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .scratched-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    color: #333;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .scratch-card-box:hover canvas {
+    cursor: pointer;
+  }
+  
+  
+  /* Add more styles or modify as per your design */
+  

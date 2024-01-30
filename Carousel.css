@@ -1,0 +1,57 @@
+.star {
+    margin: 0;
+    padding: 0;
+    /* background-image: url('./3d-cartoon-background-children.jpg'); */
+    background-size: cover;
+    height: 70vh;
+    width: 100vw;
+    display: flex; 
+    flex-direction: column;
+    font-family: sans-serif;
+    /* background-image: url('./3d-cartoon-background-children.jpg'); */
+  }
+  
+  #carouselExampleCaptions {
+    margin-top: 130px; /* Adjust the top margin as needed */
+    margin-bottom: 50px; /* Adjust the bottom margin as needed */
+  }
+  
+  .carousel-inner {
+    max-width: 800px; /* Set your desired max-width for the carousel */
+    margin: 0 auto; /* Center the carousel horizontally */
+    transition: transform 0.5s ease-in-out; /* Smooth transition for slide movement */
+  }
+  
+  .carousel-item {
+    text-align: center; /* Center the text in the carousel items */
+  }
+  
+  .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent background to the captions */
+    padding: 20px; /* Adjust padding as needed */
+    border-radius: 10px; /* Add rounded corners to the captions */
+    color: white; /* Set the text color */
+  }
+  
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: auto;
+    margin-top: 0; /* Adjust the top margin as needed */
+    /* background-color: white; */
+  }
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent background to the control icons */
+    border-radius: 50%; /* Make the control icons circular */
+  }
+  
+  /* Set maximum height for carousel images */
+  .carousel-item img {
+    max-height: 400px; /* Adjust the max-height as needed */
+    width: auto; /* Maintain the aspect ratio */
+    margin: 0 auto; /* Center the image horizontally */
+    overflow: hidden; /* Hide any overflow */
+    border-radius: 15px; /* Add rounded corners to the images */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a soft shadow effect */
+  }

@@ -1,0 +1,102 @@
+.mystery-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding-bottom: 150%;
+  }
+  
+  .box {
+    width: 300px;
+    height: 300px;
+    background: repeating-radial-gradient(red 55%, white 56%);
+    animation: rotate 2s linear infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    
+  }
+  
+  .question-mark,
+  .revealed-option {
+    font-size: 48px;
+    font-weight: bold;
+    color: #fff;
+    margin: 0;
+  }
+  
+  .box:before,
+  .box:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    /* background-color: #c0392b;  */
+  }
+  
+  .box:before {
+    top: 0;
+  }
+  
+  .box:after {
+    bottom: 0;
+  }
+  
+  .box .ribbon {
+    width: 100px;
+    height: 100px;
+    background: #e74c3c; /* Red */
+    position: absolute;
+    border: 5px solid #c0392b; /* Darker red */
+    border-radius: 50%;
+    transform: rotate(-45deg);
+    left: 25px;
+    top: -10px;
+  }
+  
+  .box.clicked {
+    animation: openBox 0.5s ease-in-out forwards;
+  }
+  
+  @keyframes openBox {
+    0% {
+      transform: rotateY(0deg);
+    }
+    50% {
+      transform: rotateY(180deg);
+    }
+    100% {
+      transform: rotateY(360deg);
+    }
+  }
+  
+  .button-container122 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .ready-button {
+    background-color: #27ae60; /* Green */
+    color: #fff;
+    font-size: 22px;
+    padding: 20px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .ready-button:hover {
+    background-color: #219653; /* Darker green on hover */
+  }

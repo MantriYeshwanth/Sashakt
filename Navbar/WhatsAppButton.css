@@ -1,0 +1,17 @@
+/* WhatsAppButton.css */
+.whatsapp-button-container {
+    text-align: center;
+    margin: 20px;
+  }
+.Instabutton{
+    background-color: deeppink;
+}
+  
+  button {
+    padding: 10px;
+    background-color: #25d366; /* WhatsApp green color */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  

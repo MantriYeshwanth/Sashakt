@@ -1,0 +1,67 @@
+/* Chatbot.css */
+
+.Chatbot {
+    max-width: 400px;
+    margin: 20px auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .ChatContainer {
+    max-height: 300px;
+    overflow-y: auto;
+    padding: 10px;
+  }
+  
+  .Message {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    max-width: 70%;
+    word-wrap: break-word;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+  }
+  
+  .UserMessage {
+    background-color: #4caf50;
+    color: white;
+    align-self: flex-end;
+  }
+  
+  .BotMessage {
+    background-color: #2196f3;
+    color: white;
+    align-self: flex-start;
+  }
+  
+  /* Input form styles */
+  input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  input:focus {
+    outline: none;
+  }
+  
+  /* Animation for User and Bot Messages */
+  .Message-enter {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  
+  .Message-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.3s, transform 0.3s;
+  }
+  

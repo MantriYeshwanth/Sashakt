@@ -1,0 +1,26 @@
+.wrapper {
+    margin: auto;
+    width: auto;
+  }
+  
+  .hp {
+    display: block;
+    position: relative;
+    margin: 0.5em 0;
+    padding: 0.8em 2.2em;
+    cursor: pointer;
+    background-color: #701515;
+    border: none;
+    border-radius: 0.4em;
+    text-transform: uppercase;
+    font-size: 19px;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+  }
+  
+  .hp:hover {
+    background-color: #ff0000;
+    transition: background 0.3s 0.1s;
+  }
+  
